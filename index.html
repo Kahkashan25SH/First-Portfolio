@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/path/to/your/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+      
+    <title>My Portfolio</title>
+</head>
+<body>
+             <!-- (       Navbar       ) -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+                 <!-- (   Home Section  ) -->
+    <section id="home">
+        <h1>Hello, I'm [Kahkashan]</h1>
+        <img src="/images/banner-bg.jpeg" alt="profile" width="40%" height="40%">
+        <p>Aspiring Full-Stack Developer</p>
+        <button onclick="scrollToSection('projects')">View My Work</button>
+    </section>
+
+                    <!--(   About Section   ) -->
+    <section id="about">
+        <h1><u>About Me</u></h1>
+        <p>I'm a passionate developer with skills in HTML, CSS, JavaScript and typeScript. Currently a student at Saylani Welfare Trust and working towards becoming a full-stack developer.</p>
+    </section>
+
+                    <!-- (   Projects Section  ) -->
+    <section id="projects">
+        <h2><u>Projects</u></h2>
+        <div class="project">
+            <h2>Array Manipulator</h2>
+            <img src="/images/array.png" alt="image" width="30%" height="30%">
+            <p>A tool to perform various operations on arrays, such as adding, removing, or modifying elements.</p>
+            <a href="https://kahkashan25sh.github.io/Array-Manipulator/">Check it out here</a>
+        </div>
+        <div class="project">
+            <h2>Rock, Pepar, Sessior</h2>
+            <img src="/images/game.png" alt="image" width="30%" height="30%">
+            <p>A simple interactive game where the user competes against the computer in the classic rock-paper-scissors match. <a href="https://kahkashan25sh.github.io/Rock-Paper-Scisseor/">Check it out here</a>.</p>
+        </div>
+        <div class="project">
+            <h2>Dice Roll</h2>
+            <img src="/images/dice.png" alt="image" width="30%" height="30%">
+            <p>A digital dice roller that randomly generates dice outcomes, simulating a real-life dice throw.</p>
+            <a href="https://kahkashan25sh.github.io/Dice-Roller/">check it out here</a>
+        </div>
+    </section>
+
+                     <!--  (  Contact Section  ) -->
+    <section id="contact">
+        <h1><u>Contact Me</u></h1>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+                      <!-- (  Footer  ) -->
+     <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
